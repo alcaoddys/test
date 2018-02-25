@@ -24,7 +24,7 @@ class LINE:
   def __init__(self):
     self.Talk = Talk()
     self._session = requests.session()
-    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': 'EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=', 'User-Agent': 'Line/7.14.0'}
+    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/7.14.0'}
 
   def login(self, mail=None, passwd=None, cert=None, token=None, qr=False, callback=None):
     if callback is None:
@@ -45,11 +45,11 @@ class LINE:
     self.cert = self.Talk.cert
     self._headers = {
               'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 
-              'X-Line-Access': 'EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=', 
+              'X-Line-Access': self.authToken, 
               'User-Agent': 'Line/7.14.0'
    }
-    self.Poll = Poll('EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=')
-    self.channel = channel.Channel('EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=')
+    self.Poll = Poll(self.authToken)
+    self.channel = channel.Channel(self.authToken)
     self.channel.login()	
     self.mid = self.channel.mid
     self.channel_access_token = self.channel.channel_access_token
