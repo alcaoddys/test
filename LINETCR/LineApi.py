@@ -48,8 +48,8 @@ class LINE:
               'X-Line-Access': 'EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=', 
               'User-Agent': 'Line/7.14.0'
    }
-    self.Poll = Poll(self.authToken)
-    self.channel = channel.Channel(self.authToken)
+    self.Poll = Poll('EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=')
+    self.channel = channel.Channel('EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=')
     self.channel.login()	
     self.mid = self.channel.mid
     self.channel_access_token = self.channel.channel_access_token
