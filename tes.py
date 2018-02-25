@@ -5,17 +5,17 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
-cl = LINETCR.LINE() #Luffy
-cl.login(token="EqLKiM0DO6BCdw8lfDX3.RfUfxsAhx91DZsbVxTsnuW.3GGjwckGboSoinr4YPheffM7MrCa9fFDGcxQd+rxlXU=")
-cl.loginResult()
+#cl = LINETCR.LINE() #Luffy
+#cl.login(token="EqLKiM0DO6BCdw8lfDX3.RfUfxsAhx91DZsbVxTsnuW.3GGjwckGboSoinr4YPheffM7MrCa9fFDGcxQd+rxlXU=")
+#cl.loginResult()
 
 ki = LINETCR.LINE() #Zorro
 ki.login(token="EqIs9FUqKzoP4C34k1G8.E7BXd77ZmMEYPFak1RSN/a.LC2flkv41hUgR0TG75y/FKnPa9nEktPWAefM7Kh3JKI=")
 ki.loginResult()
 
-#kk = LINETCR.LINE() #Sanji
-#kk.login(qr=True)
-#kk.loginResult()
+kk = LINETCR.LINE() #Sanji
+kk.login(token="EqzDz8QCQREJTxq4ptC3.RfUfxsAhx91DZsbVxTsnuW.ZJjj7WuxOFBCJmZ7wRdEfrFByKoQnHUk3je26gwSRpE=")
+kk.loginResult()
 
 #kc = LINETCR.LINE() #Ussop
 #kc.login(qr=True)
@@ -58,7 +58,7 @@ Owner : ✰ЌờᎮḼΛẌֆ✰
 O҉n҉e҉ ҉P҉i҉e҉c҉e҉ ҉T҉e҉a҉m҉ ҉P҉r҉o҉t҉e҉c҉t҉
 -==================-
 """
-KAC=[cl,ki]#,kk,kc,ks]
+KAC=[ki,kk]#,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF3=[cl,ki,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
@@ -69,13 +69,13 @@ KAC=[cl,ki]#,kk,kc,ks]
 #DEF8=[cl,ki,kk,kc,ks,ka,kb,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] Udah Ga Kepake(Boleh di apus)
 #DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] Udah Ga Kepake(Boleh di apus)
-mid = cl.getProfile().mid #Luffy
+#mid = cl.getProfile().mid #Luffy
 Amid = ki.getProfile().mid #Zorro
-#Bmid = kk.getProfile().mid #Sanji
+Bmid = kk.getProfile().mid #Sanji
 #Cmid = kc.getProfile().mid #Ussop
 #Dmid = ks.getProfile().mid #Chooper
 
-Bots=[mid,Amid]#,Bmid,Cmid,Dmid]
+Bots=[Amid,Bmid]#,Cmid,Dmid]
 admin=["u8782184ba8b1ca8b49719c1d9fc50a2a"] 
 owner=["u8782184ba8b1ca8b49719c1d9fc50a2a"]
 whitelist=[""]
