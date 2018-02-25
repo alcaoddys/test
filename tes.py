@@ -6,12 +6,12 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
-cl.login(token="EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=")
+cl.login(token="EqjmNoNbLMbtgxckek73.RfUfxsAhx91DZsbVxTsnuW.V90l9TYqs+TbqlHEOo4kH2qP94Wk1eckWIDFeb7vSLM=")
 cl.loginResult()
 
-#ki = LINETCR.LINE() #Zorro
-#ki.login(qr=True)
-#ki.loginResult()
+ki = LINETCR.LINE() #Zorro
+ki.login(token="EqIs9FUqKzoP4C34k1G8.E7BXd77ZmMEYPFak1RSN/a.LC2flkv41hUgR0TG75y/FKnPa9nEktPWAefM7Kh3JKI=")
+ki.loginResult()
 
 #kk = LINETCR.LINE() #Sanji
 #kk.login(qr=True)
@@ -58,7 +58,7 @@ Owner : ✰ЌờᎮḼΛẌֆ✰
 O҉n҉e҉ ҉P҉i҉e҉c҉e҉ ҉T҉e҉a҉m҉ ҉P҉r҉o҉t҉e҉c҉t҉
 -==================-
 """
-KAC=[cl]#,ki,kk,kc,ks]
+KAC=[cl,ki]#,kk,kc,ks]
 #DEF1=[ki,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF2=[cl,kk,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
 #DEF3=[cl,ki,kc,ks,ka,kb,ko,ke,ku] Udah Ga Kepake(Boleh di apus)
@@ -70,12 +70,12 @@ KAC=[cl]#,ki,kk,kc,ks]
 #DEF9=[cl,ki,kk,kc,ks,ka,kb,ko,ku] Udah Ga Kepake(Boleh di apus)
 #DEF10=[cl,ki,kk,kc,ks,ka,kb,ko,ke] Udah Ga Kepake(Boleh di apus)
 mid = cl.getProfile().mid #Luffy
-#Amid = ki.getProfile().mid #Zorro
+Amid = ki.getProfile().mid #Zorro
 #Bmid = kk.getProfile().mid #Sanji
 #Cmid = kc.getProfile().mid #Ussop
 #Dmid = ks.getProfile().mid #Chooper
 
-Bots=[mid]#,Amid,Bmid,Cmid,Dmid]
+Bots=[mid,Amid]#,Bmid,Cmid,Dmid]
 admin=["u8782184ba8b1ca8b49719c1d9fc50a2a"] 
 owner=["u8782184ba8b1ca8b49719c1d9fc50a2a"]
 whitelist=[""]

@@ -24,7 +24,7 @@ class LINE:
   def __init__(self):
     self.Talk = Talk()
     self._session = requests.session()
-    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': 'EqqeTgx4VD7fo7dDGIZa.H4iys6IXYOTjCzWDN8ukkG.uqMY6VUBheOfu6XzVohygPfXeSj2Woa4mxcO2YhvnZQ=', 'User-Agent': 'Line/7.14.0'}
+    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tiPhone OS\t10.12.0', 'X-Line-Access': 'EqjmNoNbLMbtgxckek73.RfUfxsAhx91DZsbVxTsnuW.V90l9TYqs+TbqlHEOo4kH2qP94Wk1eckWIDFeb7vSLM=', 'User-Agent': 'Line/7.14.0'}
 
   def login(self, mail=None, passwd=None, cert=None, token=None, qr=False, callback=None):
     if callback is None:
