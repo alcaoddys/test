@@ -14,7 +14,7 @@ ki.login(token="EqIs9FUqKzoP4C34k1G8.E7BXd77ZmMEYPFak1RSN/a.LC2flkv41hUgR0TG75y/
 ki.loginResult()
 
 kk = LINETCR.LINE() #Sanji
-kk.login(token="EqzDz8QCQREJTxq4ptC3.RfUfxsAhx91DZsbVxTsnuW.ZJjj7WuxOFBCJmZ7wRdEfrFByKoQnHUk3je26gwSRpE=")
+kk.login(token="EqzZ8zvwk1SayQwg2EP3.RfUfxsAhx91DZsbVxTsnuW.V4fmq+0nqWp6WPGL6yFKm8O7m5TXxtCJTyFnSkpbyds=")
 kk.loginResult()
 
 #kc = LINETCR.LINE() #Ussop
